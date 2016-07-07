@@ -5,16 +5,25 @@
 </style>
 
 <template>
-    <router-view></router-view>
+    <div class="hehe">
+        <div class="enen">{{msg}}</div>
+    </div>
 </template>
 
 <script>
     module.exports = {
-        /*data: function () {
+        data: function () {
             return {
                 msg: 'ppppppppppp'
             }
-        }*/
-        props: ['msg']
+        },
+        props: ['msg'],
+        methods: {
+            navRoute: function (name) {
+                this.$route.router.go({
+                    name: name
+                });
+            }
+        }
     };
 </script>

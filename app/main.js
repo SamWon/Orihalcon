@@ -1,10 +1,10 @@
 var Vue = require('vue');
 var VueRouter = require('vue-router');
 var router = require('./router.js');
-var App = require('./components/Haha.vue');
+var App = require('./components/Nav.vue');
 Vue.use(VueRouter);
 
-router.start(App, 'haha');
+router.start(App, '#router');
 
 /*
 var testVue = new Vue({

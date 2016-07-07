@@ -1,5 +1,7 @@
 var Vue = require('vue');
 var VueRouter = require('vue-router');
+var Test = require('./components/Test.vue');
+var Haha = require('./components/Haha.vue');
 Vue.use(VueRouter);
 
 var router = new VueRouter({
@@ -7,15 +9,17 @@ var router = new VueRouter({
 });
 
 router.map({
-    '/': {
-        component: {
-            Test: require('./components/Test.vue'),
-        }
+    /*'/': {
+        name: 'index',
+        component: Haha
+    },*/
+    '/hehe': {
+        name: 'hehe',
+        component: Test
     },
     '/haha': {
-        component: {
-            Test: require('./components/Test.vue'),
-        }
+        name: 'haha',
+        component: Haha
     }
 });
 
