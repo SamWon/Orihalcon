@@ -6,7 +6,7 @@
 
 <template>
     <div class="hehe">
-        <div class="enen">{{msg}}</div>
+        <div class="enen" v-bind:class="classObject">{{msg}}</div>
     </div>
 </template>
 
@@ -14,7 +14,11 @@
     module.exports = {
         data: function () {
             return {
-                msg: 'ppppppppppp'
+                msg: 'ppppppppppp',
+                classObject: {
+                    aaaa: true,
+                    bbbb: false
+                }
             }
         },
         props: ['msg'],

@@ -2,8 +2,9 @@
 </style>
 
 <template>
-    <a v-link="{name: 'hehe'}">hehe</a>
-    <a v-link="{name: 'haha'}">haha</a>
+    <a v-link="'hehe'">hehe</a>
+    <a v-link="'haha'">haha</a>
+    <div>{{$route.path}}</div>
 
     <router-view></router-view>
 </template>

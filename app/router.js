@@ -4,8 +4,12 @@ var Test = require('./components/Test.vue');
 var Haha = require('./components/Haha.vue');
 Vue.use(VueRouter);
 
-var router = new VueRouter({
+/* var router = new VueRouter({
     history: true
+}); */
+
+var router = new VueRouter({
+    hashbang: false
 });
 
 router.map({
@@ -14,11 +18,11 @@ router.map({
         component: Haha
     },*/
     '/hehe': {
-        name: 'hehe',
+        // name: 'hehe',
         component: Test
     },
     '/haha': {
-        name: 'haha',
+        // name: 'haha',
         component: Haha
     }
 });
