@@ -6,6 +6,7 @@
 
 <template>
     <div class="test">
+        <p>{{news.id}}-{{news.title}}</p>
         <div class="enen">{{msg}}</div>
         <input v-model="msg" v-on:click="aaa" type="text">
     </div>
@@ -16,6 +17,13 @@
         data: function () {
             return {
                 msg: 'world'
+            }
+        },
+
+        props: {
+            news: {
+                type: Object,
+                required: true
             }
         },
 
