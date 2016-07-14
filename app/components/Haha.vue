@@ -26,6 +26,10 @@
             }
         },
 
+        components: {
+            test: require('./Test.vue')
+        },
+
         created: function () {
             var me = this;
             var dateStr = new Date();
@@ -51,10 +55,6 @@
                     name: name
                 });
             }
-        },
-
-        components: {
-            test: require('./Test.vue')
         }
     };
 </script>
